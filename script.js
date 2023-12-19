@@ -5,15 +5,15 @@ var currentDay = new Date();
 $("#currentDay").text(currentDay);
 
 
-const testHour = dayjs().hour(15).hour()
-console.log(testHour)
+// const testHour = dayjs().hour(15).hour()
+// console.log(testHour)
 
 
 const currentHour = dayjs().hour()
 console.log(currentHour)
 
 if(currentHour < 9 || currentHour > 17) ;
-switch (testHour) {
+switch (currentHour) {
   case 9:
     document.getElementById('hour-9').classList.add('present')
     document.getElementById('hour-10').classList.add('future')
